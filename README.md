@@ -16,3 +16,4 @@ Step 3
 
 In the path folder is the composer dumpautoload - o command
 
+If any problem please contact me at educatcode.com
