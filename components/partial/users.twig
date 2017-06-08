@@ -1,0 +1,6 @@
+{% for user in t %}
+	<li>{{user.img_large}}</li>
+{% endfor %}
+
+$this->view->render($response, 'partial/users.twig', ["t"=> $m_photo]);
+ $m_photo = $this->photo_service->photo_user($user_id);

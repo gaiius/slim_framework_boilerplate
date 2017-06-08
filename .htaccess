@@ -1,0 +1,12 @@
+Options +FollowSymLinks -MultiViews -Indexes
+
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+        #RewriteCond %{HTTP_HOST} !bingkai.com$ [NC]
+        #RewriteRule ^(.*)$ http://www.mybingkai.com/$1 [L,R=301] 
+
+	RewriteRule  ^$ public/    [L]
+	RewriteRule  (.*) public/$1 [L]        
+</IfModule>

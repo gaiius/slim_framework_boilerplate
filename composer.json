@@ -1,0 +1,48 @@
+{
+    "name": "fahmi rizky nugraha",
+    "description": "Best Moment Your Life",
+    "keywords": ["Slim", "Eloquent", "Monolog", "Twig", "Framework"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fahmi Nugraha Tamvan",
+            "email": "fahmirizky29@gmail.com",
+            "homepage": "https://educatecode.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "controller/",
+            "Model\\": "model/",
+            "Core\\": "core/",
+            "Service\\": "service/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer dumpautoload -o"
+        ],
+        "post-update-cmd": [
+            "composer dumpautoload -o"
+        ]
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "slim/twig-view": "^2.0",
+        "illuminate/database": "^5.2",
+        "illuminate/events": "^5.2",
+	"symfony/http-foundation": "^3.0",
+        "slim/csrf": "^0.6.0",
+        "slim/http-cache": "^0.3.0",
+        "slim/flash": "dev-master",
+        "vlucas/phpdotenv": "^2.3",
+        "intervention/image": "^2.3",
+        "guzzlehttp/guzzle": "~6.2",
+        "dopesong/slim-whoops": "^1.0"
+    
+	
+    }
+}
